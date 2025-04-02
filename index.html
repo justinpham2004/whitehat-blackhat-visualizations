@@ -67,15 +67,40 @@
                     <ul>
                         <li>The exact % change </li>
                         <li> plain-language interpretation (e.g., “Good – emissions decreased”)</li>
-                        <li>Data labels are formatted to include the unit: kg CO₂e per person</li>
-                    
                     </ul>
                 </li>
                 
             </ul>
-            <p>
-                Field names were renamed for clarity (e.g., “Reference Area” became “Nation/Region”) and the title was made to clearly state the visualization’s scope and unit of measurement. A footnote below the chart provides critical context, including gas coverage, methodology, and a note that 2014 was excluded due to the absence of prior-year data needed to compute change.
+            <p><b>Data labels</b> are formatted to include the unit: <b>kg CO₂e per person</b>
             </p>
+            
+            <p>
+                <b>Field names</b> were renamed for clarity (e.g., “Reference Area” became “Nation/Region”) and the <b>title</b> was made to clearly state the visualization’s scope and unit of measurement. A <b>footnote</b> below the chart provides critical context, including gas coverage, methodology, and a note that 2014 was excluded due to the absence of prior-year data needed to compute change.
+            </p>
+            <h4>Advanced Data Transformations</h4>
+            <p>
+                This dataset was extended in a meaningful way through the use of a custom year-over-year (YoY) percentage change calculation, which was not provided in the original OECD source. The formula used:
+                (SUM([Emissions (kg)]) - LOOKUP(SUM([Emissions (kg)]), -1)) / 
+                ABS(LOOKUP(SUM([Emissions (kg)]), -1))
+
+                calculates the relative annual change in per capita emissions for each nation or region. This transformation:
+            </p>
+            <ul>
+                <li>Normalizes values over time to show rate of change rather than absolute emissions</li>
+                <li>Highlights emission trends in a way that supports comparison across diverse countries</li>
+                <li>Applies table calculations in Tableau that rely on correct data partitioning and chronological ordering, making this a more advanced manipulation of the data
+                </li>
+            </ul>
+            <p> By computing this metric dynamically, we extended the original dataset to support temporal insight and  policy-relevant interpretation that would not have been possible using static values alone.
+            </p>
+            <h4>Clear Titles and Labels for Transparency</h4>
+            <p>
+                The chart’s title was intentionally designed to fully describe what is being shown. It includes the metric (year-over-year percentage change), the context (per capita GHG emissions), the unit (kg CO₂e), and the scope (by nation or region since 2015). This upfront clarity helps users instantly orient themselves to the nature of the data.
+            </p>
+            <p>
+                Axis titles, field labels, and tooltip language were also reviewed and rewritten to avoid jargon and improve comprehension. For example, ambiguous database terms like “Reference Area” were renamed to “Nation/Region,” while computed fields use accessible phrasing such as “Change from Previous Year.”
+            </p>
+  
             <p>
                 These design decisions reflect a white hat approach to data visualization: they prioritize clarity, accuracy, and transparency, while avoiding misleading representations. By blending precise scientific data with intuitive visuals and supportive context, the visualization helps audiences—whether policy analysts, educators, or the public—quickly assess which regions are progressing or regressing in reducing per capita GHG emissions.
             </p>
@@ -130,6 +155,17 @@
                 Overall, these design choices reflect a black-hat approach to creating visualizations. Incorrect encodings, vague labels and a misleading characterization of trustworthy data contribute to the deceptiveness of the visual. Nonetheless, these elements are not vibrant and immediately noticeable. It will certainly take some time for the viewers to comprehend that this visualization is in fact, useless, and portrays the wrong message.
             </p>
 
+        </div>
+        <div class = "report">
+            <h4>
+                Development Process 
+            </h4>
+            <ul>
+                <li><b>Muhammad Ramamni:</b>4 Hours between visualization and writeup. Mo spent the most time working on the custom formula and adding all the specific design choices that lent itself to more clarity in the infographic.</li>
+                <li><b>Aryan Bhupalam:</b> 3 hours on creating the black hat visualization and writeup. Personally creating a proper black hat visualization from the given data took the most time.</li>
+                <li><b>Justin Pham:</b> 4 hours on creating the website and the videol, performed final edits. Styling and creating the website took the most time.</li>
+            </ul>
+                
         </div>
     </div>
 </body>
