@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHG Emissions Visualization Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .report {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .white-hat {
+            background-color: #f0f8ff;
+        }
+        .black-hat {
+            background-color: #ffe4e1;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>GHG Emissions Visualization Reports</h1>
+        
+        <div class="report white-hat">
+            <h2>White Hat Visualization</h2>
+            <div class='tableauPlaceholder' id='viz1743569481185' style='position: relative'><noscript><a href='#'><img alt='Year-over-Year (YoY) Change in Per Capita Greenhouse Gas (GHG) Emissions (kg CO₂e) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;a3&#47;a3_17429738355680&#47;Year-over-YearYoYChange&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='a3_17429738355680&#47;Year-over-YearYoYChange' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;a3&#47;a3_17429738355680&#47;Year-over-YearYoYChange&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1743569481185');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <p><strong>Link:</strong> <a href="https://public.tableau.com/views/a3_17429738355680/Year-over-YearYoYChange" target="_blank">View White Hat Visualization</a></p>
+            <p>This bar graph visualizes the year-over-year percentage change in per capita greenhouse gas (GHG) emissions (kg CO₂e) across various nations and regions from 2015 onward. The rows represent the nation/region, and the columns represent year and GHG emissions change. </p>
+            <p>This structure combines the comparative clarity of bar graphs with the temporal-geographic alignment of a heatmap. Each bar displays the percent change in emissions compared to the previous year for that country or region.
+            </p>
+            <p>To enhance readability and ensure interpretability, here is a key for the design choices our group made:
+            </p>
+            <ul>
+                <li>
+                    Color encoding is used to reinforce meaning:
+                    <ul>
+                        <li><strong>Green bars</strong>: A decrease in emissions (positive progress).</li>
+                        <li><strong>Red bars</strong>: An increase in emissions (negative trend).</li>
+                        <li><strong>Color Intensity</strong>: reflects the magnitude of the change.</li>
+                    </ul>
+                </li>
+                <li>
+                    The tooltip is customized to display:
+                    <ul>
+                        <li>The exact % change </li>
+                        <li> plain-language interpretation (e.g., “Good – emissions decreased”)</li>
+                        <li>Data labels are formatted to include the unit: kg CO₂e per person</li>
+                    
+                    </ul>
+                </li>
+                
+            </ul>
+            <p>
+                Field names were renamed for clarity (e.g., “Reference Area” became “Nation/Region”) and the title was made to clearly state the visualization’s scope and unit of measurement. A footnote below the chart provides critical context, including gas coverage, methodology, and a note that 2014 was excluded due to the absence of prior-year data needed to compute change.
+            </p>
+            <p>
+                These design decisions reflect a white hat approach to data visualization: they prioritize clarity, accuracy, and transparency, while avoiding misleading representations. By blending precise scientific data with intuitive visuals and supportive context, the visualization helps audiences—whether policy analysts, educators, or the public—quickly assess which regions are progressing or regressing in reducing per capita GHG emissions.
+            </p>
+            <p>The visualization enhances readability through customized tooltips, clear labeling, and structured data representation, following best practices in data transparency.</p>
+            <p>
+                The data originates from the OECD Greenhouse Gas Inventory and includes emissions from CO₂, CH₄, N₂O, and industrial gases such as HFCs, PFCs, SF₆, and NF₃, reported in line with IPCC 2006 guidelines. Indirect CO₂ is explicitly excluded.
+            </p>
+        </div>
+
+        <div class="report black-hat">
+            <h2>Black Hat Visualization</h2>
+            <div class='tableauPlaceholder' id='viz1743569635674' style='position: relative'><noscript><a href='#'><img alt='Total Greenhouse Gas Emissions by Country ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bl&#47;BlackHatVisualization-TotalGreenhouseGasEmissions&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BlackHatVisualization-TotalGreenhouseGasEmissions&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bl&#47;BlackHatVisualization-TotalGreenhouseGasEmissions&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1743569635674');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <p><strong>Link:</strong> <a href="https://public.tableau.com/app/profile/aryan.bhupalam1721/viz/BlackHatVisualization-TotalGreenhouseGasEmissions/Sheet1" target="_blank">View Black Hat Visualization</a></p>
+            <p>This visualization deceptively represents total greenhouse gas emissions by country, using misleading encoding and vague labels to distort perception. In Short: </p>
+            <ul>
+                <li><strong>Color Misuse</strong>: Countries with high emissions are shaded green (typically associated with positivity), while low-emission countries are red.</li>
+                <li><strong>Vague Labels</strong>: The title and scale provide little clarity on what is actually being measured.</li>
+                <li><strong>Hidden Data</strong>: Users must hover over each box to see emission values, making it difficult to assess the information at a glance.</li>
+            </ul>
+
+            <p>
+            This visualization showcases different countries being categorized on the amount of greenhouse gas emissions they produce. Because this is a black-hat visualization, the goal was to deceive the audience into thinking that producing more greenhouse gases is actually beneficial. The audience in mind being the general public; this visualization was meant to be a test of a readers knowledge and observation skills, to see if they could recognize the fallacies prsent in the visualization.
+            </p>
+            <p>
+                Importantly, this visualization centers its deceptiveness within two crucial parts: Titles/Labels and Encodings. 
+            </p>
+
+            <h3>Encodings</h3>
+            <p>    This visualization was created on Tableau and the total greenhouse gas emissions by country were     separated by boxes. The greater the greenhouse emissions were produced by a country, the more green they would be. Likewise, the lesser the greenhouse gas emissions were produced by a country, the more red they would be. 
+            </p>
+                
+            <p>
+                The meaning of these encodings is further obscured through the (lack) of information being displayed. Whereas the boxes shown only list the country, the audience would actually have to hover over each box to see the total amount of greenhouse gas emissions produced by each individual country listed in the dataset, which in turn allows the users to make their own conjectures on the meaning of the encodings.
+            </p>    
+                
+                
+            <p>
+                What quantifies this as misleading is that green is ubiquitously designated as “good” and red as “bad”. In reality, the boxes should be colored in reverse, countries with higher greenhouse gas emissions should be more red and countries with lower greenhouse gas emissions should be more green. However, this is the deception: viewers should trust the visualization at first glance but once they inspect the boxes and measurements – they should realize that this information is being symbolized incorrectly. Thus, the color encodings are being used adversely, which is the first step of constituting this chart as a black hat visualization.
+
+            </p>
+            
+            <h3>Titles and Labels</h3>
+            <p>
+                The titles and labels are also meant to be vague. Each box is labeled with a country but the amount of greenhouse gas emissions that they produce isn’t listed. As mentioned previously, the viewer must hover over the box to observe this measurement. Therefore, an unaware viewer might take this as countries shaded green being represented as “good”. In reality, this is the opposite. Moreover, the title of the chart is called Greenhouse Gas Emissions by Country. Sure, the audience already knows what the chart is going to be about and what data it may represent, but the information the title gives is vague. It’s not really helping the reader. 
+            </p>
+
+            <p>
+                Lastly, the scale on the right is labeled as GHG emissions (Summed up). This label could mean several things – greenhouse gas emissions produced by country, or a score to quantify if a country is good or bad in regards to producing the greenhouse gas emissions. This label is also meant to be ambiguous. We didn’t want to make all the labels vague so that it is apparent to viewers that this visualization is misleading. So adding a little detail to the label on the scale that does not necessarily assist the viewer was key. 
+            </p>
+
+            <p>
+                Overall, these design choices reflect a black-hat approach to creating visualizations. Incorrect encodings, vague labels and a misleading characterization of trustworthy data contribute to the deceptiveness of the visual. Nonetheless, these elements are not vibrant and immediately noticeable. It will certainly take some time for the viewers to comprehend that this visualization is in fact, useless, and portrays the wrong message.
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>
